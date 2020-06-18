@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{linkedin.com/in/swapansharan}{\Large Swapan Sharan}} & Email : \href{mailto:swap.math@gmail.com}{swap.math@gmail.com}\\
+  \href{http://swapansharan.com/}{http://www.swapansharan.com} & Mobile : +91-9899-280-708 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology}{Delhi, India}
+      {Master of Science in Mathematics;  GPA: 6.72}{Jun. 2009 -- May. 2011}
+    \resumeSubheading
+      {Govt. Autonomous College}{Rourkela, India}
+      {Bachelor of Science in Mathematics(Honours);  Percentage: 79.4\%}{Jun. 2006 -- May. 2009}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Optum Pvt. Ltd.}{Noida, UP}
+      {Senior Manager Data Science}{Sep 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Anomaly Detection}
+          {Designed a predictive algorithm to detect fraud waste abuse and error patterns \& identify suspected providers further stop their claims and for clinical audit}
+        \resumeItem{Chat-Bot}
+          {Developed a Chat-Bot using Keras Theanos and Natural language processing, this bot works as a claim query responder to the emails or chats coming form providers}
+        \resumeItem{Inventory Prioritization}
+        {Deployed an machine learning based optimization algorithm which looks into claims inventory and prioritizes them for clinical auditors basis probability of savings}
+        \resumeItem{COB Prediction}
+        {Machine learning algorithm which identifies members with more than one insurance, this model is ensemble of 20 algorithms which identifies such members}
+        \resumeItem{Provider Network Articulation}
+        {Network based unsupervised algorithm which extracts linking providers who are part of more than one fraud network}
+        \resumeItem{Claim Auto-Denial Bot}
+        {Natural Language based DeepLearning algorithm which reads medical records submitted by providers and denies fraud claims}
+      \resumeItemListEnd
+      
+       \resumeSubheading
+      {Prophesee}{Delhi, Delhi}
+      {Lead Data Scientist}{Jan 2016 - Sep 2016}
+      \resumeItemListStart
+        \resumeItem{Boosted Ad Prediction}
+          {Supervised algorithm which identifies the trends coming from facebook ads which distinguises between paid post, viral post, non-paid posts}
+        \resumeItem{Webhooks Model}
+          {Predictive algorithm which predicts engagements and lifetime of any post or ads and amount spent on paid-ads, posted by your competitiors}
+        \resumeItem{AI Ad Manager}
+        {Machine learning based predictive \& prescriptive algorithm which identifies ads which will garner higher engagement provider recommendations for poor ads}
+        \resumeItem{Social Influencer Score}
+        {Unsupervised Network based algorithm which identifies influencers for each brand further distingues between macro/micro influencers}
+      \resumeItemListEnd
+      
+       \resumeSubheading
+      {RSG Media LLC}{Gurgaon, Haryana}
+      {Senior Statistician}{Mar 2014 - Dec 2015}
+      \resumeItemListStart
+        \resumeItem{Promo Optimization \& Scheduling}
+          {Mathematical model which measured to gauge the success of promo campaign. This algorithm calculates the conversion \& placement efficacy of each promos. Capable of dynamically scheduling whithin or cross channel promotion planning}
+        \resumeItem{TV ratings}
+          {TV Ratings prediction algorithm used simulation based data to make prediction on viewership and reach of each program further predicted popularity metrics as TV ratings }
+      \resumeItemListEnd
+      
+       \resumeSubheading
+      {AbsolutData}{Gurgaon, Haryana}
+      {Analyst}{Jun 2013 - Mar 2014}
+      \resumeItemListStart
+        \resumeItem{Personalized Campaigns}
+          {Reccomendation engine which reads through historical booking patterns from properiotry hospitality databases. Shared presonalized campaigns via emailing vehicles containing an optimal number of campaign}
+        \resumeItem{Last Minute Users}
+          {Supervised algorithm which predicted members who are attracted to last minute offers}
+      \resumeItemListEnd
+      
+      
+
+    \resumeSubheading
+      {Genpact}{Bangalore, Karnataka}
+      {Business Analyst}{Sep 2011 - Jun 2013}
+      \resumeItemListStart
+        \resumeItem{A/B Testing}
+          {Performed A/B testing analysis for changed in menu options of IVR system using properitory telecome data}
+        \resumeItem{Affinity Score}
+          {Scoring Algorithm which identifies member affinity towards various contacts channel i.,e IVR, Web-Chat or Talk to agent}
+        \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Personal Attributes \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Active Listener}
+      {Understanding service objectives and capturing business requirements through active listening \& questioning techniques}
+    \resumeSubItem{Business Acumen}
+      {Able to identify business \& Systems process improvements from Big Picture to detail level}
+    \resumeSubItem{Leadership}
+      {Served as a Senate member at IIT Delhi \& College Vice President at Govt. College}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, SAS}
+     \hfill
+     \textbf{Technologies}{: AWS, ElasticSearch, MongoDB}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
